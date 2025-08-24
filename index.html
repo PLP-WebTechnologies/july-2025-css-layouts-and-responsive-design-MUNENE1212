@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Evolution & Web Development Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Evolution of Programming Languages</h1>
+            <p>Exploring the journey from machine code to modern frameworks</p>
+        </header>
+
+        <!-- Lists Section -->
+        <section>
+            <h2>Programming Language Evolution Timeline</h2>
+            <ol>
+                <li><strong>1940s:</strong> Machine Language & Assembly</li>
+                <li><strong>1950s:</strong> FORTRAN (1957) - First high-level language</li>
+                <li><strong>1960s:</strong> COBOL, LISP, BASIC</li>
+                <li><strong>1970s:</strong> C, Pascal, Smalltalk</li>
+                <li><strong>1980s:</strong> C++, Objective-C, Perl</li>
+                <li><strong>1990s:</strong> Python, Java, JavaScript, PHP</li>
+                <li><strong>2000s:</strong> C#, Scala, F#</li>
+                <li><strong>2010s:</strong> Go, Rust, Swift, Kotlin</li>
+                <li><strong>2020s:</strong> TypeScript, Dart, Julia</li>
+            </ol>
+
+            <h3>Modern Programming Paradigms</h3>
+            <ul>
+                <li><strong>Object-Oriented Programming (OOP)</strong> - Encapsulation, Inheritance, Polymorphism</li>
+                <li><strong>Functional Programming</strong> - Immutability, Pure Functions, Higher-order Functions</li>
+                <li><strong>Reactive Programming</strong> - Asynchronous Data Streams</li>
+                <li><strong>Concurrent Programming</strong> - Parallel Execution, Thread Safety</li>
+                <li><strong>Declarative Programming</strong> - What vs How approach</li>
+            </ul>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Programming Language Popularity & Usage</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Year Created</th>
+                        <th>Primary Use Case</th>
+                        <th>Difficulty Level</th>
+                        <th>Market Demand</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1995</td>
+                        <td>Web Development</td>
+                        <td>Medium</td>
+                        <td>Very High</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>1991</td>
+                        <td>AI/ML, Data Science</td>
+                        <td>Easy</td>
+                        <td>Very High</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>1995</td>
+                        <td>Enterprise Applications</td>
+                        <td>Medium</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>1985</td>
+                        <td>System Programming</td>
+                        <td>Hard</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Go</td>
+                        <td>2009</td>
+                        <td>Cloud/DevOps</td>
+                        <td>Medium</td>
+                        <td>Growing</td>
+                    </tr>
+                    <tr>
+                        <td>Rust</td>
+                        <td>2010</td>
+                        <td>Systems Programming</td>
+                        <td>Hard</td>
+                        <td>Growing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Learning Resources</h2>
+            <div class="media-section">
+                <div>
+                    <h3>Featured Programming Tutorial</h3>
+                    <video controls poster="https://videos.pexels.com/video-files/854182/854182-hd_1920_1080_25fps.mp4">
+                        <source src="programming-tutorial.mp4" type="video/mp4">
+                        <source src="programming-tutorial.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><em>Introduction to Modern Programming Concepts</em></p>
+                </div>
+                <div>
+                    <h3>Programming Podcast</h3>
+                    <audio controls>
+                        <source src="https://www.bbc.com/audio/play/w3ct6zp1" type="mp3">
+                        <source src="programming-podcast.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p><em>Weekly discussions on programming trends and best practices</em></p>
+                    
+                    <h4>Learning Path Illustration</h4>
+                    <img src="https://images.pexels.com/photos/1578750/pexels-photo-1578750.jpeg" 
+                         alt="Programming Learning Path Diagram" 
+                         style="width: 300px; height: 200px; border-radius: 8px; margin-top: 10px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced HTML5 Form -->
+        <section>
+            <h2>Developer Registration & Assessment Form</h2>
+            <form action="/submit-registration" method="POST" novalidate>
+                
+                <!-- Personal Information Fieldset -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-row">
+                        <div>
+                            <label for="firstName">First Name *</label>
+                            <input type="text" 
+                                   id="firstName" 
+                                   name="firstName" 
+                                   required 
+                                   minlength="2" 
+                                   maxlength="50"
+                                   pattern="[A-Za-z\s]+"
+                                   placeholder="Enter your first name"
+                                   autocomplete="given-name">
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" 
+                                   id="lastName" 
+                                   name="lastName" 
+                                   required 
+                                   minlength="2" 
+                                   maxlength="50"
+                                   pattern="[A-Za-z\s]+"
+                                   placeholder="Enter your last name"
+                                   autocomplete="family-name">
+                        </div>
+                    </div>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           required 
+                           placeholder="developer@example.com"
+                           autocomplete="email">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" 
+                           id="phone" 
+                           name="phone" 
+                           pattern="[\+]?[0-9\s\-\(\)]+"
+                           placeholder="+1 (555) 123-4567"
+                           autocomplete="tel">
+
+                    <label for="birthDate">Date of Birth</label>
+                    <input type="date" 
+                           id="birthDate" 
+                           name="birthDate" 
+                           min="1950-01-01" 
+                           max="2005-12-31">
+
+                    <label for="website">Personal Website/Portfolio</label>
+                    <input type="url" 
+                           id="website" 
+                           name="website" 
+                           placeholder="https://yourportfolio.com">
+                </fieldset>
+
+                <!-- Programming Experience Fieldset -->
+                <fieldset>
+                    <legend>Programming Experience</legend>
+                    
+                    <label for="experienceLevel">Experience Level *</label>
+                    <select id="experienceLevel" name="experienceLevel" required>
+                        <option value="">Select your experience level</option>
+                        <option value="beginner">Beginner (0-1 years)</option>
+                        <option value="intermediate">Intermediate (2-5 years)</option>
+                        <option value="advanced">Advanced (6-10 years)</option>
+                        <option value="expert">Expert (10+ years)</option>
+                    </select>
+
+                    <label for="yearsExperience">Years of Programming Experience *</label>
+                    <input type="number" 
+                           id="yearsExperience" 
+                           name="yearsExperience" 
+                           required 
+                           min="0" 
+                           max="50" 
+                           step="0.5"
+                           placeholder="e.g., 3.5">
+
+                    <label>Primary Programming Languages * (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="javascript" name="languages[]" value="javascript" required>
+                            <label for="javascript">JavaScript</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="python" name="languages[]" value="python">
+                            <label for="python">Python</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="java" name="languages[]" value="java">
+                            <label for="java">Java</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="csharp" name="languages[]" value="csharp">
+                            <label for="csharp">C#</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cpp" name="languages[]" value="cpp">
+                            <label for="cpp">C++</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="go" name="languages[]" value="go">
+                            <label for="go">Go</label>
+                        </div>
+                    </div>
+
+                    <label>Preferred Development Environment *</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="frontend" name="devEnvironment" value="frontend" required>
+                            <label for="frontend">Frontend Development</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="backend" name="devEnvironment" value="backend" required>
+                            <label for="backend">Backend Development</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="fullstack" name="devEnvironment" value="fullstack" required>
+                            <label for="fullstack">Full-Stack Development</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="mobile" name="devEnvironment" value="mobile" required>
+                            <label for="mobile">Mobile Development</label>
+                        </div>
+                    </div>
+
+                    <label for="githubUsername">GitHub Username</label>
+                    <input type="text" 
+                           id="githubUsername" 
+                           name="githubUsername" 
+                           pattern="[A-Za-z0-9\-_]+"
+                           placeholder="your-github-username">
+                </fieldset>
+
+                <!-- Project & Learning Goals Fieldset -->
+                <fieldset>
+                    <legend>Project Experience & Goals</legend>
+                    
+                    <label for="projectDescription">Describe your most significant programming project *</label>
+                    <textarea id="projectDescription" 
+                              name="projectDescription" 
+                              required 
+                              minlength="50" 
+                              maxlength="1000"
+                              rows="4" 
+                              placeholder="Describe the project, technologies used, challenges faced, and outcomes achieved..."></textarea>
+
+                    <label for="learningGoals">What programming skills do you want to develop?</label>
+                    <textarea id="learningGoals" 
+                              name="learningGoals" 
+                              rows="3" 
+                              maxlength="500"
+                              placeholder="List specific technologies, frameworks, or concepts you'd like to learn..."></textarea>
+
+                    <label for="availabilityHours">Weekly Hours Available for Learning *</label>
+                    <input type="range" 
+                           id="availabilityHours" 
+                           name="availabilityHours" 
+                           min="1" 
+                           max="40" 
+                           step="1" 
+                           value="10" 
+                           required
+                           oninput="document.getElementById('hoursOutput').textContent = this.value">
+                    <output id="hoursOutput">10</output> hours per week
+                </fieldset>
+
+                <!-- Additional Information Fieldset -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <label for="salary">Expected Salary Range (Optional)</label>
+                    <input type="number" 
+                           id="salary" 
+                           name="salary" 
+                           min="0" 
+                           max="500000" 
+                           step="1000"
+                           placeholder="e.g., 75000">
+
+                    <label for="password">Create Account Password *</label>
+                    <input type="password" 
+                           id="password" 
+                           name="password" 
+                           required 
+                           minlength="8" 
+                           pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+                           placeholder="Must include: A-Z, a-z, 0-9, special character"
+                           autocomplete="new-password">
+
+                    <label for="confirmPassword">Confirm Password *</label>
+                    <input type="password" 
+                           id="confirmPassword" 
+                           name="confirmPassword" 
+                           required 
+                           minlength="8"
+                           placeholder="Re-enter your password"
+                           autocomplete="new-password">
+
+                    <label for="referralSource">How did you hear about us?</label>
+                    <select id="referralSource" name="referralSource">
+                        <option value="">Select an option</option>
+                        <option value="search">Search Engine</option>
+                        <option value="social">Social Media</option>
+                        <option value="friend">Friend/Colleague</option>
+                        <option value="ad">Online Advertisement</option>
+                        <option value="conference">Tech Conference</option>
+                        <option value="blog">Tech Blog/Article</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <div class="checkbox-item" style="margin-top: 20px;">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Subscribe to our programming newsletter and updates</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                        <label for="terms">I agree to the Terms of Service and Privacy Policy *</label>
+                    </div>
+                </fieldset>
+
+                <!-- Hidden fields for technical requirements -->
+                <input type="hidden" name="formVersion" value="2.1" readonly>
+                <input type="hidden" name="submissionTime" id="submissionTime" readonly>
+
+                <div class="submit-section">
+                    <button type="submit" onclick="document.getElementById('submissionTime').value = new Date().toISOString()">
+                        Register as Developer
+                    </button>
+                    <button type="reset" style="background: #718096; margin-left: 10px;">
+                        Reset Form
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
